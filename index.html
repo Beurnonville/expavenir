@@ -1,0 +1,410 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">		
+
+		<title>Devenir purée Vitelotte</title>
+		
+		<meta name="description" content="Parcours Avenir - Devenir purée Vitelotte">
+		<meta name="author" content="PP3E Beurnonville">		
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/simple.css">		
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		
+		<!--<script src="https://kit.fontawesome.com/27e336993e.js" crossorigin="anonymous"></script>		-->
+		<script src="js/spotlight.bundle.js"></script>
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+		<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+			
+	</head>
+	
+<style>
+:root {
+	--r-link-color: #906202;
+	--r-link-color-hover: #ee9a1c;
+}
+
+.reveal a {
+  transition: color 0.5s ease;
+}
+
+.titre {
+	color: white;
+	font-weight: bold;
+	padding: 0.7em 1em;
+}
+
+.mynum {
+	display:inline-block;
+	background:white;
+	color:#6E4200;
+	width: 1.5em;
+	text-align:right;
+	border-radius: 0.25em; 
+	padding-right: 0.5em;
+	margin-right:1em;
+}
+
+.reveal .sommaire ol {
+	margin: 0;
+ 	padding: 0;
+ 	list-style: none;
+ 	display: grid;
+	gap: 1rem;
+	counter-reset: orderedlist;
+}
+
+.reveal .sommaire li {
+	display: grid;
+	grid-template-columns: 0 1fr;
+	gap: 2.75em;
+	align-items: start;
+}
+
+.reveal .sommaire ol li::before {
+  	counter-increment: orderedlist;
+  	content: counter(orderedlist);
+	width: 1.5em;	
+	text-align: right;
+	color: #6E4200;
+	background-color: white;
+	border-radius: 0.25em; 
+	padding-right: 0.5em;
+  	font-weight: bold;	
+}
+
+.matiere {
+	position:absolute;
+	width:400px;	
+	border-left: #6E4200 5px solid;
+	padding-left:0.5em;
+}
+
+.titrematiere {
+	color: #6E4200 ;
+	font-weight:bold;
+}
+
+.myslick {
+	width:50%;
+	margin: 1em auto 0;
+}
+
+.reveal .myslick img {
+	margin:0;
+	max-width:100%;
+	max-height:100%;
+}
+
+.spl-title {
+  font-size: 32px;
+}
+
+.spl-description {
+	font-size: 20px;
+}
+
+.bonus {
+	position:absolute;
+	display:flex;
+	flex-direction:column;
+	width: 180px;
+  	background: #6E4200;
+  	border-radius: 16px;
+  	padding: 0.25em;
+  	align-items: center;	
+	text-align:center;
+	gap: 0.25em;
+	right:1em;
+	top:500px;
+}
+
+.qualite {
+	background: #f4c63e69;
+  	border-radius: 1em;  
+  	padding: 0.25em;
+	font-size:0.8em;
+	display: flex;
+  	align-items: center;	
+}
+
+.slide-menu-button a {
+	color:#f5b51e;
+}
+
+.lesnuls:hover {
+	animation: swing 1s;
+}
+
+.reveal .reveal-toolbar .reveal-toolbar-button {
+	color:#f5b51e;
+	border: #f5b51e 2px solid;
+}
+</style>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-menu-title="Parcours Avenir" style="text-align: left;">
+					<img style="position: absolute;left: 0;top: 0;margin:0;border:0;max-width:100%;max-height:max-content;z-index: -1;" src="img/fond_01.jpg"> 
+					<div style="position: relative;top: 20px;left: 200px;color: white;font-weight: bold;">Parcours Avenir</div>
+					<div style="display: inline-flex;text-align: right;position: relative;left: 50px;top: 50px;font-size: 1.4em;font-weight: bold;color: #D5C8B6;text-shadow: 3px 3px 5px #000000;"><p class="animate__bounceInRight animate__slower">Devenir purée de<br>pommes de terre<span style="width:60px;display:inline-block;"></span><br>Vitelotte<span style="width:120px;display:inline-block;"></span></p></div>
+					<div style="position: relative;display: inline-flex;color: white;top: 400px;left: -460px;width: 300px;flex-direction: column;align-items: center;">
+						<p style="margin:0;">Barack Afreet</p>
+						<p style="margin:0;">3<sup>ème</sup> 9</p>
+					</div>
+					<div style="position: relative;font-size: 0.8em;width: 200px;text-align: center;color: #6E4200;top: 420px;left: 250px;">Collège Beurnonville</div>
+				</section>
+<!-- Les membres du bureau -->								
+				<section data-menu-title="Sommaire" style="text-align: left;">
+						<img style="position: absolute;left: 0;top: 0;margin:0;border:0;max-width:100%;max-height:max-content;z-index: -1;" src="img/fond_02.jpg"> 
+						<div style="position: relative;top: 20px;left: 180px;color: white;font-weight: bold;">Sommaire</div>
+						<div class="sommaire animate__zoomIn" style="position: relative;width:650px;top: 170px;left: 30px;color:white;">
+							<ol>
+								<li>Introduction : motivations </li>
+								<li>Problématique</li>
+								<li>Je réinvestis mes connaissances</li>
+								<li>Mon parcours d'études</li>
+								<li>Mon stage en entreprise</li>
+								<li>Mes qualités pour exercer ce métier</li>
+								<li>Conclusion</li>
+							</ol>
+						</div>					
+				</section>
+				
+				<section data-menu-title="Motivations" style="text-align: left;">
+					<img style="position: absolute;left: 0;top: 0;margin:0;border:0;max-width:100%;max-height:max-content;z-index: -1;" src="img/fond_03.jpg"> 
+					<div class="titre"><span class="mynum">1</span>Pourquoi ai-je choisi ce parcours ?</div>
+					
+					
+					<div class="matiere" style="left:200px;top:200px;">
+						<img style="position: absolute;left: -120px;top: 0;margin:0;border:0;width:100px;" class="animate__fadeIn" src="img/prof_01.png"> 
+						<div class="titrematiere">Histoire</div>
+						<div>Les origines de la pomme de terre</div>
+					</div>
+					
+					<div class="matiere" style="left:750px;top:170px;">
+						<img style="position: absolute;left: -120px;top: 0;margin:0;border:0;width:100px;" class="animate__fadeIn" src="img/prof_02.png"> 
+						<div class="titrematiere">Sciences Physiques</div>
+						<div>Projet <a href="https://cipotato.org/annualreport2016/stories/mars-potatoes/" target="_blank">Papas en Martes</a></div>
+					</div>	
+
+					<div class="matiere" style="left:150px;top:550px;">
+						<img style="position: absolute;left: -120px;top: 0;margin:0;border:0;width:100px;" class="animate__fadeIn" src="img/prof_04.png"> 
+						<div class="titrematiere">SVT</div>
+						<div>L'apport nutritionnel : la Vitelotte</div>
+					</div>		
+
+					<div class="matiere" style="left:650px;top:420px;">
+						<img style="position: absolute;left: -120px;top: 0;margin:0;border:0;width:100px;" class="animate__fadeIn" src="img/prof_03.png"> 
+						<div class="titrematiere">Mathématiques</div>
+						<div>Calcul du nombre de pommes de terre Vitelotte nécessaire pour conserver la couleur</div>
+					</div>						
+				</section>
+				
+				<section data-menu-title="Problématique" style="text-align: left;">
+					<img style="position: absolute;left: 0;top: 0;margin:0;border:0;max-width:100%;max-height:max-content;z-index: -1;" src="img/fond_03.jpg"> 
+					<div class="titre"><span class="mynum">2</span>Comment devenir purée de pommes de terre Vitelotte ?</div>										
+
+					<div class="myslick">
+					  <div><img src="img/puree_04.png"></div>
+					  <div><img src="img/puree_02.png"></div>
+					  <div><img src="img/puree_03.png"></div>
+					  <div><img src="img/puree_01.png"></div>
+					  <div><img src="img/puree_05.png"></div>
+					  <div><img src="img/puree_06.png"></div>
+					  <div><img src="img/puree_07.png"></div>
+					</div>	
+					
+
+					<div class="bonus animate__fadeInUp">
+						<div style="font-size: 0.8em;font-weight: bold;color: white;">Bonus :</div>
+						<div style="width: 100%;background: white;line-height: 0;padding: 0.25em 0;border-radius: 10px;">
+							<a  href="#" class="spotlight" data-media="video"     
+												data-poster="img/preview.jpg"                
+												data-src-mp4="video/cite_peur.mp4"                     
+												data-autoplay="true"                     
+												data-preload="true"
+												data-controls="true"
+												data-inline="false"
+												data-title="La Cité de la peur (extrait) - Les Nuls (1994)",
+												data-description="« Simon, t'as un bout de pomme de terre sur la joue. »">
+							 	<img src="img/preview.jpg" class="lesnuls" style="width:150px;margin:0;">
+							</a>						
+						</div>
+					</div>		
+
+					<img src="img/vitelotte.png" style="position:absolute;margin:0;top: 500px;width: 300px;left: 50px;z-index:10;" class="animate__backInLeft">					
+				</section>
+				
+				
+				<section data-menu-title="Je réinvestis mes connaissances" style="text-align: left;">
+					<img style="position: absolute;left: 0;top: 0;margin:0;border:0;max-width:100%;max-height:max-content;z-index: -1;" src="img/fond_03.jpg"> 
+					<div class="titre"><span class="mynum">3</span>Pour atteindre mon objectif</div>
+
+					<div class="matiere" style="left:200px;top:200px;">
+						<img style="position: absolute;left: -120px;top: 0;margin:0;border:0;width:100px;" class="animate__fadeIn" src="img/prof_08.png"> 
+						<div class="titrematiere">SVT</div>
+						<div>je dois posséder des anthocyanines</div>
+					</div>	
+
+					<div class="matiere" style="left:750px;top:170px;">
+						<img style="position: absolute;left: -120px;top: 0;margin:0;border:0;width:100px;" class="animate__fadeIn" src="img/prof_09.png"> 
+						<div class="titrematiere">Histoire - Géographie</div>
+						<div>Les zones de culture de la Vitelotte et sa production mondiale</div>
+					</div>	
+
+					<div class="matiere" style="left:220px;top:610px;">
+						<img style="position: absolute;left: -120px;top: 0;margin:0;border:0;width:100px;" class="animate__fadeIn" src="img/prof_07.png"> 
+						<div class="titrematiere">Latin</div>
+						<div>Les déclinaisons de <span style="font-style: italic;">Solanum tuberosum</span></div>
+					</div>	
+
+					<div class="matiere" style="left:150px;top:400px;">
+						<img style="position: absolute;left: -120px;top: 0;margin:0;border:0;width:100px;" class="animate__fadeIn" src="img/prof_05.png"> 
+						<div class="titrematiere">Technologie</div>
+						<div>Fabrication d'un épluche patate</div>
+					</div>	
+
+					<div class="matiere" style="left:650px;top:450px;width: 500px;">
+						<img style="position: absolute;left: -140px;top: 0;margin:0;border:0;width:120px;" class="animate__fadeIn" src="img/prof_06.png"> 
+						<div class="titrematiere">EPS</div>
+						<div>Les activités physiques indispensables pour garder la forme (de patate)</div>
+					</div>						
+				</section>	
+
+				<section data-menu-title="Mon parcours d'études" style="text-align: left;">
+					<img style="position: absolute;left: 0;top: 0;margin:0;border:0;max-width:100%;max-height:max-content;z-index: -1;" src="img/fond_03.jpg"> 
+					<div class="titre"><span class="mynum">4</span>Études envisagées</div>
+					<img style="position: absolute;right: 50px;top: 250px;margin:0;border:0;max-width:50%;max-height:max-content;z-index: -1;opacity:0.15;" src="img/diploma_06.svg"> 
+					
+					<div style="display: grid;grid-template-columns: 60px 1fr;width: 700px;margin: 1.5em 2em;gap: 0em 1em;">
+						<div><img class="animate__fadeIn" src="img/diplome_01.png"></div>
+						<div>Bac Pro Anthocyane au Lycée Patatas de Troyes</div>
+						<div><img class="animate__fadeIn" src="img/diplome_02.png"></div>
+						<div>BTS purée de pommes de terre au lycée agricole de la Patate Douce</div>
+						<div><img class="animate__fadeIn" src="img/diplome_03.png"></div>
+						<div>Licence de Vitelotage à l'Université Presse Purée de Reims</div>
+						<div><img class="animate__fadeIn" src="img/diplome_04.png" style="max-width: 100%;"></div>
+						<div>Master et doctorat de purée Vitelotte à l'Université du Tubercule Violet</div>
+					</div>
+					<img style="position: absolute;right: 20px;top: 350px;margin:0;border:0;" class="animate__backInDown" src="img/diplome.png"> 
+				</section>	
+				
+				<section data-menu-title="Mon stage en entreprise" style="text-align: left;">
+					<img style="position: absolute;left: 0;top: 0;margin:0;border:0;max-width:100%;max-height:max-content;z-index: -1;" src="img/fond_03.jpg"> 
+					<div class="titre"><span class="mynum">5</span>Mon stage dans une usine de fabrication de chips</div>
+
+						<div style="display:flex;margin: 1em auto;width: 80%;text-align: center;flex-direction: column;align-items: center;gap:1em;">								
+							<img class="animate__fadeIn" src="img/usine.png" style="width:450px;">
+							<img class="animate__fadeIn slower" src="img/chipsdale_02.png" style="position: absolute;width: 220px;left: 80px;transform: rotate(-25deg);top: 270px;">
+							<img class="animate__fadeIn slower" src="img/chipsdale.png" style="position: absolute;width: 300px;right: 50px;transform: rotate(20deg);top: 270px;">
+							<div>Ce que j'ai appris au sein de l'entreprise « Chip & dale »<div>
+						</div>							
+				</section>					
+
+				<section data-menu-title="Mes qualités pour exercer ce métier" style="text-align: left;">
+					<img style="position: absolute;left: 0;top: 0;margin:0;border:0;max-width:100%;max-height:max-content;z-index: -1;" src="img/fond_03.jpg"> 
+					<div class="titre"><span class="mynum">6</span>Les essentiels au métier</div>	
+					
+					<div style="display: grid;grid-template-columns: 1fr 1fr 1fr;width: 1100px;margin: 2em auto;gap: 0em 1em;text-align:center;">
+						<div><img src="img/qualite_01.png" style="width:140px;margin:0;"></div>
+						<div><img src="img/qualite_02.png" style="width:250px;margin:0;"></div>
+						<div><img src="img/qualite_03.png" style="width:160px;margin:0;"></div>
+						<div class="qualite animate__fadeIn">Obtenir de bons résultats dans les matières scientifiques</div>
+						<div class="qualite animate__fadeIn">Avoir les qualités requises d'une bonne pomme de terre</div>
+						<div class="qualite animate__fadeIn">Ne pas avoir peur des métamorphoses</div>
+					</div>					
+					<div class="animate__fadeIn" style="text-align:center;">Et, bien sûr... avoir la frite !</div>
+					<img class="animate__fadeIn slower" src="img/frite.png" style="position: absolute;width: 100px;right: 220px;transform: rotate(20deg);top: 550px;">
+				</section>
+				
+				<section data-menu-title="Conclusion">
+					<img style="position: absolute;left: 0;top: 0;margin:0;border:0;max-width:100%;max-height:max-content;z-index: -1;" src="img/fond_04.jpg"> 
+					<div class="titre" style="padding-left: 650px;"><span class="mynum" style="color:#4A1B3B;">7</span>Conclusion</div>	
+					<img class="animate__fadeIn slower" src="img/goodbye.png" style="position: absolute;width: 200px;right: 50px;top: 500px;max-height: none;">
+					<div style="position: absolute;font-size: 0.8em;width: 220px;text-align: center;color: #4A1B3B;top: 700px;left: 670px;">Merci pour votre attention</div>
+				</section>					
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/zoom/zoom.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script src="plugin/menu/menu.js"></script>	
+		<script src="plugin/appearance/appearance.js"></script>		
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				width: 1200,
+    			height: 850,
+    			margin: 0.05,
+    			//minScale: 1,
+    			//maxScale: 1,			
+				controls: true,
+				progress: true,
+				center: false,			
+				hash: true,
+				transition: 'convex',
+				transitionSpeed: 'fast',
+				
+				dependencies: [
+					{ src: 'plugin/toolbar/toolbar.js' }
+				  ],
+				  
+				menu: {
+					titleSelector: '.mytitle, .sectiontitle, .header',
+				},
+					
+
+				toolbar: {
+					// Specifies where the toolbar will be shown: 'top' or 'bottom'
+					position: 'top',
+
+					// Add button to toggle fullscreen mode for the presentation
+					fullscreen: true,
+					captureMenu: false,
+				},				  
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMenu, Appearance]
+			});
+		</script>
+<!--		
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>		
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>		
+-->
+<script
+			  src="https://code.jquery.com/jquery-3.7.1.min.js"
+			  integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+			  crossorigin="anonymous"></script>
+<script
+			  src="https://code.jquery.com/jquery-migrate-3.4.1.min.js"
+			  integrity="sha256-UnTxHm+zKuDPLfufgEMnKGXDl6fEIjtM+n1Q6lL73ok="
+			  crossorigin="anonymous"></script>	
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>				  
+<script>
+$(document).ready(function(){
+  $('.myslick').slick({  
+	infinite: true,
+  	slidesToShow: 1,
+	autoplay: true,
+  	autoplaySpeed: 4000,
+	arrows:false,
+	pauseOnFocus: false,
+	pauseOnHover: false,
+	fade:true,
+  });
+});
+</script>
+	</body>	
+</html>
